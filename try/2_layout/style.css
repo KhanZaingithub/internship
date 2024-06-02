@@ -868,6 +868,10 @@ header .hamburger{
     .section_16 .background .flex{
         display: block;
     }
+    .section_16 .background .text_1{
+        width : calc(100% - 60px);
+        font-size : 1.6vw;
+    }
     .section_16 .background .flex .text_3{
         width: auto;
         font-size: 4vw;
