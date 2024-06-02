@@ -849,6 +849,7 @@ header .hamburger{
     }
     .section_14 .background .image .image_1 .text_1{
         text-align: center;
+        font-size: 1.6vw; 
     }
     .section_14 .background .image>*{
         text-align: center;
