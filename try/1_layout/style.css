@@ -530,7 +530,7 @@ footer .right .third a{
     font-size: 22px;
     text-align: center;
 }
-@media (min-width:370px) and (max-width:767px) {
+@media (min-width:360px) and (max-width:767px) {
     header{
         width: 100%;
     }
