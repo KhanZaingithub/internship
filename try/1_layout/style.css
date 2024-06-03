@@ -839,19 +839,38 @@ footer .right .third a{
         font-size: 20px !important;
         text-align: center !important;
     }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .left{
+        width: calc(100% - 20px);
+        padding: 0px 10px;
+    }
     footer .left .second{
         font-size: 10px;
         padding-left: 0px;
     }
     footer .left .third {
         padding-left: 0px;
-        gap: 10px;
+        justify-content: space-around;
+    }
+    footer .middle{
+        width: 100%;
+        padding-top: 30px;
+    }
+    footer .middle .middle{
+        padding-top: 22px;
+    }
+    footer .middle .pad{
+        padding-left: 10px !important;
+    }
+    footer .right{
+        padding-top: 30px;
+        padding-left: 10px;
     }
     footer .right .third{
         flex-direction: column;
-    }
-    footer .middle {
-        display: none;
     }
     footer .right .second{
         font-size: 12px;
@@ -860,4 +879,5 @@ footer .right .third a{
     footer .right .third a{
         font-size: 12px;
     }
+}
 }
