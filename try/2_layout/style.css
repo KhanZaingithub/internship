@@ -670,13 +670,13 @@ header .hamburger{
         background-image: url("images/back.jpg");
     }
     .section_1 .text .text_1{
-        font-size: 20PX;
+        font-size: 3vw;
     }
     .section_1 .text .text_2{
-        font-size: 80px;
+        font-size: 14vw;
     }
     .section_1 .text .text_3{
-        font-size: 24px;
+        font-size: 3.5vw;
     }
     .section_2{ 
          height: auto;
@@ -698,6 +698,7 @@ header .hamburger{
     }
     .section_2 .background .text .text_1{
         font-size: 2.5vw;
+        width: calc(100% - 20px);
     }
     .section_2 .background .text .text_2{
         font-size: 3vw;
@@ -705,12 +706,6 @@ header .hamburger{
     .section_2 .background .text .text_3{
         font-size: 2.5vw;
     }
-    .section_3 .text{
-        width: 100% !important;
-    }
-    /* .section_3 .image{
-        width: 100% !important;
-    } */
     .section_3 .text_1{
         font-size: 16px !important;
     }
@@ -755,9 +750,6 @@ header .hamburger{
         font-size: 11px !important;
         justify-content: center;
     }
-    /* .section_5 .background .image{
-        width: 100%;
-    } */
     .section_6 .background .text {
         flex-direction: column;
     }
@@ -838,7 +830,6 @@ header .hamburger{
     }
     .section_14 .background .image .text_1{
         text-align: start;
-        font-size : 1.3vw;
     }
     .section_14 .background .text{
         padding-bottom: 0px;
@@ -850,12 +841,12 @@ header .hamburger{
     }
     .section_14 .background .image .image_1 .text_1{
         text-align: center;
-        font-size: 1.6vw; 
-    }
-    .section_14 .background .image .image_1 .text_2{
         font-size: 1.6vw;
     }
-    .section_14 .background .image .image_1 .text_3{
+    .section_14 .background .image .image_2 .text_2{
+        font-size: 1.6vw;
+    }
+    .section_14 .background .image .image_3 .text_3{
         font-size: 1.6vw;
     }
     .section_14 .background .image>*{
@@ -868,10 +859,6 @@ header .hamburger{
     .section_16 .background .flex{
         display: block;
     }
-    .section_16 .background .text_1{
-        width : calc(100% - 60px);
-        font-size : 1.6vw;
-    }
     .section_16 .background .flex .text_3{
         width: auto;
         font-size: 4vw;
@@ -883,6 +870,11 @@ header .hamburger{
         height: auto;
         padding: 5px 0px;
         text-align: center;
+    }
+
+    .section_16 .background .text_1{
+        font-size: 1.5vw;
+        width: calc(100% - 60px);
     }
 
     .section_18 .background .text .image >* {
@@ -924,6 +916,12 @@ header .hamburger{
     }
     .section_21 .background .size .icon{
         display: none;
+    }
+    .section_21 .background .size .text_1{
+        font-size: 1.5vw;
+    }
+    .section_21 .background .size .text_1{
+        font-size: 1.5vw;
     }
     .section_23 .background .text{
         text-align: center;
