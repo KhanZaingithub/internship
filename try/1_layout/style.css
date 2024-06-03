@@ -18,6 +18,9 @@ header{
     justify-content: space-between;
     padding-right: 15px;
 }
+header .container_1 .hamburger{
+    display: none;
+}
 .logo{
     width: 7vw;
     padding: 0px 2vw;
