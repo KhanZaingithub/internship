@@ -892,5 +892,7 @@ footer .right .third a{
     footer .right .third a{
         font-size: 12px;
     }
-}
+    .copy .container{
+        font-size: 14px;
+    }
 }
