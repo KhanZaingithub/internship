@@ -849,11 +849,12 @@ footer .right .third a{
     }
     footer .left .second{
         font-size: 10px;
-        padding-left: 0px;
+        padding-left: 25px;
     }
     footer .left .third {
         padding-left: 0px;
         justify-content: space-around;
+        padding-left: 25px;
     }
     footer .middle{
         width: 100%;
@@ -867,11 +868,11 @@ footer .right .third a{
         padding-top: 20px;
     }
     footer .middle .pad{
-        padding-left: 10px !important;
+        padding-left: 19px !important;
     }
     footer .right{
         padding-top: 30px;
-        padding-left: 10px;
+        padding-left: 19px;
         width: 90%;
     }
     footer .right .third{
