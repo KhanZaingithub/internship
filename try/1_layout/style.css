@@ -863,19 +863,24 @@ footer .right .third a{
     footer .middle .middle{
         padding-top: 22px;
     }
+    footer .middle .second{
+        padding-top: 20px;
+    }
     footer .middle .pad{
         padding-left: 10px !important;
     }
     footer .right{
         padding-top: 30px;
         padding-left: 10px;
+        width: 90%;
     }
     footer .right .third{
         flex-direction: column;
+        padding-top: 20px;
     }
     footer .right .second{
         font-size: 12px;
-        padding-top: 70px;
+        padding-top: 20px;
     }
     footer .right .third a{
         font-size: 12px;
