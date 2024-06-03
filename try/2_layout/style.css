@@ -645,6 +645,12 @@ header .hamburger{
 .section_24 .background .text .text_1{
     line-height: 3vw;
 }
+.copy .container{
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+}
 @media (max-width:767px) {
     .section_2 br{
         display: none;
@@ -931,6 +937,9 @@ header .hamburger{
     }
     .section_23 .background .text>*{
         width: auto;
+    }
+    .copy .container{
+        font-size: 16px;
     }
 }
 
