@@ -835,6 +835,10 @@ footer .right .third a{
     .block_15 .input{
         width: 80%;
     }
+    .block_17{
+        font-size: 20px !important;
+        text-align: center !important;
+    }
     footer .left .second{
         font-size: 10px;
         padding-left: 0px;
