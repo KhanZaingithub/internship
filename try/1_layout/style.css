@@ -524,6 +524,12 @@ footer .right .third a{
     color: black;
     text-decoration: none;
 }
+.copy.container{
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+}
 @media (min-width:370px) and (max-width:767px) {
     header{
         width: 100%;
