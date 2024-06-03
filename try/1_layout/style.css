@@ -858,8 +858,8 @@ footer .right .third a{
     }
     footer .middle{
         width: 100%;
-        padding-top: 30px;
-        padding-left: 10px;
+        padding-top: 20px;
+        padding-left: 30px;
     }
     footer .middle .middle{
         padding-top: 22px;
@@ -871,8 +871,8 @@ footer .right .third a{
         padding-left: 19px !important;
     }
     footer .right{
-        padding-top: 30px;
-        padding-left: 19px;
+        padding-top: 20px;
+        padding-left: 30px;
         width: 90%;
     }
     footer .right .third{
