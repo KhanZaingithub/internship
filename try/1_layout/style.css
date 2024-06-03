@@ -610,6 +610,9 @@ footer .right .third a{
     .block_2 p{
         font-size: 20px;
     }
+    .block_3{
+        margin-bottom: 4vw;
+    }
     .block_3 .item .image{
         width: 24px;
         padding-left: 9px;
