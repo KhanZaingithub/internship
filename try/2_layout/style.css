@@ -910,6 +910,9 @@ header .hamburger{
         display: block;
         padding-bottom: 0px;
     }
+    .section_21 .background .image .text{
+       text-align: center; 
+    }
     .section_21 .background .size{
        text-align: center;
        padding-top: 0px;
