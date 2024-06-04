@@ -279,7 +279,7 @@ header .hamburger{
 }
 .section_9 .background .image{
     padding: 0px 20px;
-    width: calc(100% - 40px);
+    width: auto !important;
 }
 .section_9 .background .text{
     flex-direction: row;
