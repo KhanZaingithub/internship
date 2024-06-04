@@ -896,3 +896,39 @@ footer .right .third a{
         font-size: 14px;
     }
 }
+@media (min-width:768px) and (max-width:1024px){
+    .block_7 .image{
+        width: calc(65% - 115px);
+    }
+    .block_7 .image .right{
+        width: auto;
+    }
+    .block_7 .image .left{
+        width: auto;
+    }
+    .block_7 .image .left .image_2{
+        padding: 0px;
+    }
+    .block_7 .container{
+        margin-left: -16vw;
+        align-self: center;
+    }
+    .block_7 .container .text{
+        margin-top: 0vw;
+    }
+    .block_14 .middle{
+        padding: 0px 15px;
+    }
+    .block_14 .middle .background .text{
+        padding: 5px;
+        width: auto;
+        margin-top: 64px;
+    }
+    .block_15 .btn{
+        width: 170px;
+    }
+    footer .middle .pad{
+        padding-left: 60px !important;
+    }
+}
+
