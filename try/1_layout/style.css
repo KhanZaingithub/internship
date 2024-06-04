@@ -863,7 +863,7 @@ footer .right .third a{
         padding-left: 25px;
     }
     footer .middle{
-        width: 100%;
+        width: calc(100% - 32px);
         padding-top: 20px;
         padding-left: 32px;
     }
