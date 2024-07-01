@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Local css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark p-md-4"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid mx-md-3 mx-lg-0 mx-xxl-5">
+        <a class="navbar-brand" style="font-size: 24px" href="#">Merpress</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          style="font-size: 18px"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a
+                class="nav-link text-white"
+                style="font-size: 18px"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" style="font-size: 18px" href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" style="font-size: 18px" href="#"
+                >Client</a
+              >
+            </li>
+
+            <li class="nav-item dropdown px-2">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="font-size: 18px"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item text-white"
+                    style="font-size: 18px"
+                    href="#"
+                    >Web developer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white"
+                    style="font-size: 18px"
+                    href="#"
+                    >App developer</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-white"
+                    style="font-size: 18px"
+                    href="#"
+                    >SEO</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" style="font-size: 18px" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-none d-lg-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide mb-2 mb-md-5">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="image-1.jpg"
+            class="d-block w-100 img-fluid height"
+            alt="..."
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image-2.jpg"
+            class="d-block w-100 img-fluid height"
+            alt="..."
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image-3.jpg"
+            class="d-block w-100 img-fluid height"
+            alt="..."
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="carousel-inner"></div>
+      </div>
+      <button
+        class="carousel-control-prev z-2"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- text -->
+    <div class="container mb-3 mb-md-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 id="text-size">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              aspernatur rem molestias, veritatis iusto facere dicta provident
+              ea ratione assumenda sunt vitae ducimus voluptatem nulla, voluptas
+              delectus, eum accusantium cupiditate!
+            </p>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- icons part -->
+    <div class="container-fluid mb-5">
+      <div class="row justify-content-evenly">
+        <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+          <h2><i class="bi bi-info-square-fill text-danger"></i></h2>
+          <h4>Build for developers</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+          <h2><i class="bi bi-journal-bookmark-fill text-primary"></i></h2>
+          <h4>Build for developers</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+          <h2><i class="bi bi-layer-backward text-success"></i></h2>
+          <h4>Build for developers</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Line -->
+    <div class="container">
+      <hr />
+    </div>
+    <!-- rating part -->
+    <div class="container-fluid mb-md-5">
+      <div class="row justify-content-evenly">
+        <div class="col-12 col-md-5">
+          <img src="image-4.avif" class="img-fluid h-100" alt="" />
+        </div>
+        <div class="col-12 col-md-5 mt-5">
+          <h5 class="mb-2">Website Development</h5>
+          <div
+            class="progress mb-4"
+            role="progressbar"
+            aria-label="Success example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-success" style="width: 25%"></div>
+          </div>
+          <h5 class="mb-2">App Development</h5>
+          <div
+            class="progress mb-4"
+            role="progressbar"
+            aria-label="Info example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-info" style="width: 50%"></div>
+          </div>
+          <h5 class="mb-2">Software Development</h5>
+          <div
+            class="progress mb-4"
+            role="progressbar"
+            aria-label="Warning example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-warning" style="width: 75%"></div>
+          </div>
+          <h5 class="mb-2">SEO</h5>
+          <div
+            class="progress mb-4"
+            role="progressbar"
+            aria-label="Danger example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-danger" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact part -->
+    <div
+      class="row justify-content-evenly mb-3"
+      style="background-color: #f2f1f2; margin-left: 0px; margin-right: 0px"
+    >
+      <div class="col-md-5 mb-3">
+        <div class="mb-4 mt-4">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="mb-3">
+          <h4 id="text-size">
+            <label for="fullName" class="form-label">Full Name</label>
+          </h4>
+          <input type="text" class="form-control" id="fullName" />
+        </div>
+        <div class="mb-3">
+          <h4 id="text-size">
+            <label for="emailAddress" class="form-label">Email Address</label>
+          </h4>
+          <input type="email" class="form-control" id="emailAddress" />
+          <p class="pt-2">Well will never share your email</p>
+        </div>
+        <div class="mb-3">
+          <h4 id="text-size">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Message</label
+            >
+          </h4>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="mb-4 mt-4">
+          <h2>Address</h2>
+          <p>
+            Longview Washington <br />
+            USA - 11547 <br />
+            <i class="bi bi-telephone"></i> : 9823179041
+          </p>
+        </div>
+        <div id="image-height" style="height: 65%">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44230.74903558463!2d-123.0067529635727!3d46.14234597003828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549473141d690d17%3A0xc658b389be7f66b9!2sLongview%2C%20WA%2C%20USA!5e0!3m2!1sen!2sin!4v1719813740370!5m2!1sen!2sin"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            width="100%"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Faq -->
+    <div
+      class="row justify-content-evenly pt-md-4 pb-5"
+      style="margin-left: 0px; margin-right: 0px"
+    >
+      <div class="col-md-10">
+        <h3 class="text-center mb-md-4">FAQ</h3>
+        <div class="accordion border" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div
+      class="row justify-content-evenly pt-3 pb-2 bg-dark text-white"
+      style="margin-left: 0px; margin-right: 0px"
+    >
+      <div class="col-md-3 pt-3">
+        <h5>Merxpress</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+          at! Incidunt velit aut dolor nam natus quaerat sunt commodi
+          voluptatum.
+        </p>
+      </div>
+      <div class="col-md-3 pt-3">
+        <h5>Important Links</h5>
+        <p>
+          <a href="#" class="text-decoration-none text-white pt-2">Home</a>
+          <br />
+          <a href="#" class="text-decoration-none text-white pt-2">About Us</a>
+          <br />
+          <a href="#" class="text-decoration-none text-white pt-2"
+            >Contact Us</a
+          >
+          <br />
+          <a href="#" class="text-decoration-none text-white pt-2">Our team</a>
+          <br />
+          <a href="#" class="text-decoration-none text-white pt-2"
+            >Our Client</a
+          >
+          <br />
+        </p>
+      </div>
+      <div class="col-md-3 pt-3">
+        <h5>Contact Us</h5>
+        <p>
+          Longview Washington <br />
+          USA - 11547 <br />
+          <i class="bi bi-telephone"></i> : 9823179041
+        </p>
+      </div>
+      <div class="row pt-3">
+        <div class="col">
+          <p id="font-size" class="text-center text-white">
+            Copyrigt 2024-2028 by Zainul , all rights are reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

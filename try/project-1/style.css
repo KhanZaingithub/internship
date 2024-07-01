@@ -1,0 +1,46 @@
+nav .container-fluid .collapse form button:hover{
+    color: white;
+    background-color: black;
+}
+.height{
+    height: calc(100vh - 90px);
+}
+.navbar-nav{
+    padding-top: 5px;
+}
+.navbar-brand{
+    margin-right: 5.5%;
+}
+.height-1{
+    height: 90px;
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+.overlay{
+    background: black;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.2;
+}
+#font-size{
+    font-size: 0.7rem !important;
+}
+@media (width < 576px) {
+      #text-size{
+        font-size: 1.25rem;
+        text-align: justify;
+      }  
+      .carousel-item img{
+        height: calc(50vh - 90px);
+      }
+      #image-height{
+        height: 48% !important;
+      }
+}
+@media (width < 576px) {
+    
+}
