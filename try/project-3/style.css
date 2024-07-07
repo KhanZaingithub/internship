@@ -83,7 +83,13 @@ body{
         margin-right: 0.32rem;
     }
     .form{
-        position: fixed;
+        top: -3rem;
+        right: 0.5rem;
+        transition: all 0s ease;
+    }
+    .transform-active{
+        top: 5rem;
+        transition: all 2s ease;
     }
 }
 @media screen and (max-width: 912px){
