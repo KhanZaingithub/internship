@@ -82,9 +82,8 @@ body{
     .ml-auto{
         margin-right: 0.32rem;
     }
-    .transform-active{
-         right: 0.5rem;
-        transition: all 2s ease;
+    .form{
+        position: fixed;
     }
 }
 @media screen and (max-width: 912px){
