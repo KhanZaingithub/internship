@@ -268,4 +268,7 @@ body {
     right: 0.5rem;
     transition: all 1s ease;
   }
+  .navbar-collapse{
+    order: 3;
+  }
 }
