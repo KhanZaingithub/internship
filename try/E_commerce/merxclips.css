@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.analog{
+    padding: 10px 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.analog .right{
+    height: 44px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: black;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.analog .right button{
+    width: 24px;
+    height: 24px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.analog .middle {
+    position: relative;
+}
+.analog .middle input{
+    width: 837px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    outline: none;
+    font-size: 16px;
+    padding: 0px 30px;
+}
+.analog .middle button{
+    width: 35px;
+    position: absolute;
+    top: 7px;
+    left: 93.5%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.analog .left button{
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+.video{
+    padding: 10px 50px;
+    height: 555px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.video .first{
+    /* background-color: grey; */
+    height: 100%;
+    border-radius: 9px;
+    border: 0.25px solid rgba(0,0,0,0.2);
+    display: flex;
+    gap: 20px;
+    
+}
+.video .first .rounded{
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 32px;
+    height: 491px;
+}
+.video .first .left{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.video .first .left p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+.video .first .left .rounded{
+    margin: 0px !important;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.video .first .left .inner_video{
+    margin: 10px 0px;
+}
+.heading p{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.video_section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.video_section .col{
+    width: 78.5%;
+}
+.video_section .col .row{
+    display: flex;
+    gap: 10px;
+}
+.video_section .col .row>*{
+    width: calc(100%/3);
+}
+.video_section .col .row .col_1 p{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+}
+.video_section .col .row .col_1 .rounded{
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 307px;
+    margin-bottom: 10px;
+}
+.video_section .col .row .col_1 .rounded iframe{
+   width: 100%;
+   height: 100%;
+}
+.button button{
+    background-color: black;
+    color: red;
+    font-size: 12.42px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 55px;
+    width: 194px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}

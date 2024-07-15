@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"
+          ><span style="color: white">Merx</span><span id="red">press</span></a
+        >
+      </div>
+      <div class="login-box">
+        <h1>Sign Up</h1>
+        <p>Enter details to create your account</p>
+        <form id="myForm">
+          <div class="textbox">
+            <label for="name">Your name</label>
+            <input
+              type="name"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <p class="name_validate">Invalid name</p>
+          </div>
+          <div class="textbox">
+            <label for="email">Email or Phone numbers</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email Phone numbers"
+              required
+            />
+            <p class="email_validate">Invalid email address</p>
+          </div>
+          <div class="textbox password">
+            <div>
+              <label for="password">Enter your password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div>
+              <label for="confirm">Confirm Password</label>
+              <input
+                type="confirm"
+                id="confirm"
+                name="confirm"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+          </div>
+          <p class="pass_validate">Password not match</p>
+          <button type="submit" class="btn">Login</button>
+          <div class="sign_in">
+            <span>Already have an account? </span
+            ><a href="sign.html"> Sign in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="sigup.js"></script>
+  </body>
+</html>
