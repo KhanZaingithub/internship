@@ -1,0 +1,15 @@
+.navbar-brand{
+    margin-left: 7rem;
+}
+.container{
+    height: calc(100vh - 56px);
+    text-align: center;
+    align-content: center;
+}
+.btn-dark{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+button{
+    margin: 0px 1rem;
+}
