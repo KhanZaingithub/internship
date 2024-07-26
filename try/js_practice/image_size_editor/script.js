@@ -1,44 +1,79 @@
-let inputFile = document.querySelector("input");
-let image = document.getElementById("image-js");
-let para = image.lastElementChild;
-let button = image.firstElementChild.nextElementSibling.nextElementSibling;
-let image1 = document.getElementById("js-photo");
-let height = document.querySelector("#height");
-let width = document.querySelector("#width");
-let ckeckbox = document.getElementById("flexCheckChecked1");
+let inputTag = document.getElementById("js-input"); // Targeting input elemt to get their property
+
+let containerTag = document.getElementById("container-img-js"); // Giving input property to conatiner
+
+// p and button to remove
+let para = containerTag.lastElementChild;
+let button = para.previousElementSibling;
+
+// height and width
+let height = document.getElementById("height-js");
+let width = document.getElementById("width-js");
+
+// checking value of checkbox
+let ckeckBox = document.getElementById("flexCheckChecked1");
+
+// reseting the size
 let reset = document.getElementById("reset");
 
-let orgImageRatio;
+
+// height width ratio of image
+let orgImageRatioWidth;
+let orgImageRatioHeight;
 let orgheight;
 let orgwidth;
 
-const select = (e)=>{
-    const photo = e.target.files[0];
-    // if(!file){
-    //     return;
-    // }
-    image1.style.display = "block"
-    document.body.style.height = "auto"
-    button.style.display = "none";
-    para.style.display = "none";
-    image1.src = URL.createObjectURL(photo);
-    image1.addEventListener("load",()=>{
-        orgheight = image1.naturalHeight;
-        orgwidth = image1.naturalWidth;
-        height.value = image1.naturalHeight;
-        width.value = image1.naturalWidth;
-        orgImageRatio = image1.naturalHeight / image1.naturalWidth;
-    })   
+// lower element
+let elementJs = document.querySelector(".lower-element");
 
+// Taking property of input (html)
+containerTag.addEventListener("click",()=> inputTag.click());
+
+
+// Create element of img
+const imageTag = document.createElement("img");
+imageTag.src = "#";
+imageTag.classList.add("img-fluid", "rounded", "h-100");
+containerTag.append(imageTag);
+
+
+const select = (e)=>{
+    const imageLink = e.target.files[0];
+
+    //remove element present in container
+    button.remove();
+    para.remove();
+  
+    imageTag.style.display = "block"
+
+    // link url to image src
+    imageTag.src = URL.createObjectURL(imageLink);
+    elementJs.style.display = "block";
+    imageTag.addEventListener("load",()=>{
+        let imgHeight = imageTag.naturalHeight;
+        let imgWidth = imageTag.naturalWidth;
+        orgheight = imgHeight;
+        orgwidth = imgWidth;
+        height.value = imgHeight;
+        width.value = imgWidth;
+        orgImageRatioWidth = (imgWidth / imgHeight);
+        orgImageRatioHeight = (imgHeight / imgWidth);
+    })   
 }
 
+
+// Taking image if change
+containerTag.addEventListener("change",select);
+
 width.addEventListener("keyup",()=>{
-    const width1 = ckeckbox.checked ? width.value/orgImageRatio : height.value;
-    height.value = width1;
+    const changeHeight = Math.ceil(ckeckBox.checked ? width.value/orgImageRatioWidth : height.value);
+    height.value = changeHeight;
 })
+
+
 height.addEventListener("keyup",()=>{
-    const height1 = ckeckbox.checked ? height.value/orgImageRatio : width.value;
-    width.value = height1;
+    const changeWidth = Math.ceil(ckeckBox.checked ? height.value/orgImageRatioHeight : width.value);
+    width.value = changeWidth;
 })
 
 reset.addEventListener("click",()=>{
@@ -46,5 +81,3 @@ reset.addEventListener("click",()=>{
     width.value = orgwidth;
 })
 
-inputFile.addEventListener("change",select)
-image.addEventListener("click",()=> inputFile.click())
