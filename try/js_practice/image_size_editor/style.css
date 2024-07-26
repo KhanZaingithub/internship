@@ -49,3 +49,15 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    #row1{
+        padding: 0px 1.5rem;
+    }
+    .content{
+        gap: 2rem;
+    }
+    .form-label{
+        padding-left: 0.3rem;
+    }
+}
