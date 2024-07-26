@@ -16,6 +16,12 @@ let ckeckBox = document.getElementById("flexCheckChecked1");
 // reseting the size
 let reset = document.getElementById("reset");
 
+// download and quality
+let downloadBtn = document.getElementById("download");
+let qualityImage = document.getElementById("flexCheckChecked");
+
+
+// console.log(qualityImage); 
 
 // height width ratio of image
 let orgImageRatioWidth;
@@ -81,3 +87,16 @@ reset.addEventListener("click",()=>{
     width.value = orgwidth;
 })
 
+const resizeAndDownload = ()=>{
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.height = height.value;
+    canvas.width = width.value;
+
+    
+    ctx.drawImage(imageTag,0,0,canvas.height,canvas.width);
+    document.body.appendChild(canvas);
+}
+
+downloadBtn.addEventListener("click",resizeAndDownload);
