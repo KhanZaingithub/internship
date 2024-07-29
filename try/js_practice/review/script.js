@@ -11,11 +11,9 @@ async function data(){
     let pro = await fetch('https://fakestoreapi.com/products');
     let response = await pro.text();
     const data = JSON.parse(response);
-    console.log(data[0]);
 
     next.addEventListener("click",function (){
         count++;
-        console.log(count);
         if(count >= data.length){
             count = 0;
         }
