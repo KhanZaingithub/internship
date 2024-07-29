@@ -106,12 +106,12 @@ const resizeAndDownload = ()=>{
     // ctx.imageSmoothingQuality = 'high';
     // console.log(ctx.imageSmoothingQuality);
  
-    // const link = document.createElement('a');
-    // link.href = canvas.toDataURL("imagfe/jpg",check);
-   // link.download = current_time;
-    // document.body.appendChild(link);
-    // link.click();
-    // document.body.removeChild(link);
+    const link = document.createElement('a');
+    link.href = canvas.toDataURL("imagfe/jpg",check);
+    link.download = current_time;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 
     document.body.append(canvas);
 
