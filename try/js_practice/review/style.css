@@ -31,3 +31,11 @@ p{
     margin: auto;
     margin-bottom: 0.5rem;
 }
+.card .image{
+    height: 250px;
+    padding: 10px;
+}
+.card .image img{
+    width: 100%;
+    height: 100%;
+}
