@@ -87,16 +87,33 @@ reset.addEventListener("click",()=>{
     width.value = orgwidth;
 })
 
+
+// reSize and download image
 const resizeAndDownload = ()=>{
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
-
+    const check = qualityImage.checked ? 0.7 : 1;
     canvas.height = height.value;
     canvas.width = width.value;
-
     
     ctx.drawImage(imageTag,0,0,canvas.height,canvas.width);
-    document.body.appendChild(canvas);
+
+    var date = new Date();
+    const date1 = String(date);
+    const Index = date1.indexOf("2024") + 5;
+    const current_time = date1.substr(Index,8);
+    
+    // ctx.imageSmoothingQuality = 'high';
+    // console.log(ctx.imageSmoothingQuality);
+ 
+    const link = document.createElement('a');
+    link.href = canvas.toDataURL("imagfe/jpg",check);
+    link.download = current_time;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
 }
+
 
 downloadBtn.addEventListener("click",resizeAndDownload);
