@@ -1,45 +1,45 @@
-const review = [
-    {
-        id: 1,
-        name: "sara",  
-    },
-    {
-        id: 2,
-        name: "sara 2",  
-    },
-    {
-        id: 3,
-        name: "sara 3",  
-    },
-    {
-        id: 4,
-        name: "sara 4",  
-    }
-]
+
 let count = 0;
-const name_1 = document.querySelector("#name");
+const name_1 = document.querySelector("#number");
+const text = document.getElementById("name");
+let image = document.getElementById("image");
 const pre = document.querySelector("#previous");
 const next = document.querySelector("#next");
 const suprise = document.querySelector("#suprise"); 
 
-next.addEventListener("click",function (){
-    count++;
-    console.log(count);
-    if(count >= review.length){
-        count = 0;
-    }
-    name_1.textContent = review[count].name;
-})
+async function data(){
+    let pro = await fetch('https://fakestoreapi.com/products');
+    let response = await pro.text();
+    const data = JSON.parse(response);
+    console.log(data[0]);
 
-pre.addEventListener("click",function (){
-    if(count <= 0){
-        count = review.length;
-    }
-    count--;
-    name_1.textContent = review[count].name;
-})
+    next.addEventListener("click",function (){
+        count++;
+        console.log(count);
+        if(count >= data.length){
+            count = 0;
+        }
+        image.src = data[count].image;
+        name_1.textContent = data[count].id;
+        text.innerHTML = data[count].title;
+    })
 
-suprise.addEventListener("click",function (){
-    let randonNumber = Math.floor(Math.random()*review.length)
-    name_1.textContent = review[randonNumber].name;
-})
+    pre.addEventListener("click",function (){
+        if(count <= 0){
+            count = data.length;
+        }
+        count--;
+        image.src = data[count].image;
+        text.innerHTML = data[count].title;
+        name_1.textContent = data[count].id;
+    })
+
+    suprise.addEventListener("click",function (){
+        let randonNumber = Math.floor(Math.random()*data.length);
+        count = randonNumber;
+        image.src = data[randonNumber].image;
+        text.innerHTML = data[randonNumber].title;
+        name_1.textContent = data[randonNumber].id;
+    })
+}
+data();
