@@ -44,11 +44,23 @@ img{
     display: none;
 }
 
+.lower-element .text-para{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.form-label{
+    padding-left: 0.3rem;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     #row1{
@@ -57,7 +69,7 @@ input::-webkit-inner-spin-button {
     .content{
         gap: 2rem;
     }
-    .form-label{
-        padding-left: 0.3rem;
+    .download{
+        flex-direction: column;
     }
 }
