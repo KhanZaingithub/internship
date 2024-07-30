@@ -30,33 +30,60 @@
       </div>
     </nav>
     <div class="container">
-      <p id="heading">Our Reviews</p>
-      <div class="card" style="width: 18rem">
-        <div class="image">
-          <img
-            id="image"
-            src="New Project.png"
-            class="card-img-top"
-            alt="..."
-          />
+      <div class="row">
+        <div class="col">
+          <input id="search" onkeyup="search()" type="text" class="form-control mt-2 mb-2" placeholder="Searchitems" aria-label="Username" aria-describedby="basic-addon1">
         </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p id="heading">Our Reviews</p>
+        </div>
+      </div>
+      <div class="row" id="products">
+        <div class="col products">
+          <div class="card" style="width: 18rem">
+            <div class="image">
+              <img
+                id="image"
+                src="New Project (1).png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
 
-        <div class="card-body">
-          <p id="number">1</p>
-          <p id="name" class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+            <div class="card-body">
+              <p id="number">1</p>
+              <p id="name" class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="buttons">
+              <button type="button" id="previous" class="btn btn-primary">
+                previous
+              </button>
+              <button type="button" id="next" class="btn btn-primary">
+                next
+              </button>
+            </div>
+            <button type="button" id="suprise" class="btn btn-primary">
+              suprise me
+            </button>
+          </div>
         </div>
-        <div class="buttons">
-          <button type="button" id="previous" class="btn btn-primary">
-            previous
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button type="button" id="show" class="btn btn-primary">
+            Show all
           </button>
-          <button type="button" id="next" class="btn btn-primary">next</button>
         </div>
-        <button type="button" id="suprise" class="btn btn-primary">
-          suprise me
-        </button>
       </div>
     </div>
 
