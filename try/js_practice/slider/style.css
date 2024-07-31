@@ -1,0 +1,25 @@
+.row-1 {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+#slider-js {
+  display: flex;
+  width: 1000%;
+  transition: all 0.5s;
+  gap: 0.5rem;
+}
+
+#previous {
+  position: absolute;
+  width: 2.5rem;
+  z-index: 1;
+  top: calc(50% - 20px);
+}
+#next {
+  position: absolute;
+  width: 2.5rem;
+  z-index: 1;
+  top: calc(50% - 20px);
+  right: 5px;
+}
