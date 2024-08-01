@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main" id="login-container">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+
+      <div class="signup">
+        <form id="form">
+          <label for="chk" aria-hidden="true">Sign up</label>
+          <input
+            id="name"
+            type="text"
+            name="txt"
+            placeholder="User name"
+            required=""
+          />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required=""
+          />
+          <input
+            id="password"
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+          <input
+            id="checkpassword"
+            type="password"
+            name="pswd"
+            placeholder="Confirm Password"
+            required=""
+          />
+          <button id="signup" type="submit">Sign up</button>
+        </form>
+      </div>
+
+      <div class="login">
+        <form id="form-login">
+          <label for="chk" aria-hidden="true">Login</label>
+          <input
+            id="login-email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required=""
+          />
+          <input
+            id="login-password"
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+          <button id="login-js" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
