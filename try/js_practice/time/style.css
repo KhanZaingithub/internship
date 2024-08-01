@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  font-weight: 700;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/bg-stars.svg),
+    linear-gradient(0deg, rgba(37, 29, 44, 1) 33%, rgba(30, 30, 40, 1) 50%);
+}
+
+h1 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+main .cards {
+  display: flex;
+  gap: 15px;
+}
+
+main .cards .card {
+  text-align: center;
+  font-size: 25px;
+}
+
+main .cards .card p {
+  color: hsl(237, 18%, 59%);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+main .cards .card .flip-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 7px 3px 0 rgb(21, 21, 21);
+  position: relative;
+  margin: 15px auto;
+}
+
+main .cards .card .top-half,
+main .cards .card .bottom-half,
+main .cards .card .top-flip,
+main .cards .card .bottom-flip {
+  color: hsl(345, 95%, 68%);
+  font-size: 35px;
+  height: 43px;
+  width: 77px;
+  padding: 23px 7px;
+  overflow: hidden;
+  text-align: center;
+  will-change: transform !important;
+  box-shadow: 0 3px rgba(71, 83, 115, 0.2) inset;
+}
+
+main .cards .card .top-half,
+main .cards .card .top-flip {
+  color: hsl(345, 62%, 57%);
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(44, 44, 68);
+}
+
+main .cards .card .top-half::before,
+main .cards .card .top-flip::before {
+  content: "";
+  background-color: rgb(25, 26, 36);
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+
+main .cards .card .top-half::after,
+main .cards .card .top-flip::after {
+  content: "";
+  background-color: rgb(25, 26, 36);
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+main .cards .card .bottom-half,
+main .cards .card .bottom-flip {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 0 0 5px 5px;
+  background-color: hsl(236, 21%, 26%);
+  box-shadow: 0 -2px 5px 0 rgba(71, 83, 115, 0.7) inset;
+}
+
+main .cards .card .bottom-half::before,
+main .cards .card .bottom-flip::before {
+  content: "";
+  background-color: rgb(25, 26, 36);
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+main .cards .card .bottom-half::after,
+main .cards .card .bottom-flip::after {
+  content: "";
+  background-color: rgb(25, 26, 36);
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+main .cards .card .top-flip {
+  position: absolute;
+  transform-origin: bottom;
+  transform: rotateX(0deg);
+  animation: flip-top 0.5s ease-in forwards;
+}
+
+main .cards .card .bottom-flip {
+  position: absolute;
+  bottom: 0;
+  transform-origin: top;
+  transform: rotateX(90deg);
+  animation: flip-bottom 0.5s ease-out 0.5s;
+}
+
+@keyframes flip-top {
+  to {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes flip-bottom {
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+button {
+  height: 3rem;
+  width: 8rem;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fb6087;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 18px;
+}
+
+main .cards .card .top-half,
+main .cards .card .bottom-half,
+main .cards .card .top-flip,
+main .cards .card .bottom-flip {
+  font-size: 80px !important;
+  height: 80px !important;
+  width: 125px !important;
+  padding: 34px 7px !important;
+}
+
+@media screen and (max-width: 700px) {
+  main h1 {
+    font-size: 31px;
+  }
+
+  main .cards {
+    gap: 25px;
+  }
+
+  main .cards .card .top-half,
+  main .cards .card .bottom-half,
+  main .cards .card .top-flip,
+  main .cards .card .bottom-flip {
+    font-size: 70px !important;
+    height: 80px !important;
+    width: 125px !important;
+    padding: 34px 7px !important;
+  }
+}
