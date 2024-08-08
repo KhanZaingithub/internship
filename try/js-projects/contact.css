@@ -1,0 +1,25 @@
+@import url(about.css);
+.maps {
+  margin-bottom: 50px;
+}
+/* .form-control {
+  font-size: 16px;
+  color: #465b52;
+} */
+.was-validated .form-control:valid {
+  background-image: none;
+}
+.was-validated .form-control:invalid {
+  background-image: none;
+}
+.contact-review {
+  justify-content: end;
+  margin-bottom: 10px;
+}
+.contact-form {
+  padding: 50px;
+}
+
+.d-flex p {
+  margin: 0px;
+}
