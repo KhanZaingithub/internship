@@ -1,0 +1,6 @@
+@import url(blog.css);
+.bg {
+  background: linear-gradient(0deg, rgb(10 10 10 / 30%), rgba(10, 10, 10, 0.3)),
+    url(images/About/banner.png);
+  background-position: right;
+}

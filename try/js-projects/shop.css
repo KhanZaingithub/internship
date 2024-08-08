@@ -1,0 +1,37 @@
+@import url(style.css);
+.bg {
+  background: linear-gradient(0deg, rgb(10 10 10 / 30%), rgba(10, 10, 10, 0.3)),
+    url("images/banner/b1.jpg");
+  color: white;
+  height: auto;
+  text-align: center;
+  padding: 70px 0px;
+  align-content: center;
+  margin-bottom: 50px;
+}
+.bg .row {
+  margin: 0px;
+}
+.banner-text h1 {
+  font-weight: 600;
+}
+.banner-text p {
+  color: white;
+  padding: 0px;
+}
+#products {
+  margin-bottom: 0px;
+}
+.buttons {
+  margin-bottom: 50px;
+}
+
+.buttons button {
+  background-color: #088178;
+  color: #ffffff;
+  margin: 0px 2px;
+}
+.buttons button:hover {
+  color: #088178;
+  background-color: #e7f4de;
+}
