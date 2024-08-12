@@ -1,0 +1,35 @@
+@import url(shop.css);
+.bg {
+  background: linear-gradient(0deg, rgb(10 10 10 / 30%), rgba(10, 10, 10, 0.3)),
+    url(images/banner/b19.jpg);
+  background-position-y: center;
+}
+.blog h1 {
+  padding-bottom: 0px;
+  margin-bottom: -24px;
+  color: #b5b5b6;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.blog h6 {
+  position: relative;
+  transition: 0.3s ease;
+  cursor: pointer;
+  width: fit-content;
+}
+.blog h6::after {
+  content: "";
+  transition: 0.3s ease;
+  position: absolute;
+  height: 2px;
+  width: 35px;
+  background-color: black;
+  top: 4px;
+  left: 114px;
+}
+.blog h6:hover {
+  color: #088178;
+}
+.blog h6:hover::after {
+  background-color: #088178;
+}
