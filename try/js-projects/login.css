@@ -1,0 +1,89 @@
+@import url(style.css);
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.logo {
+  margin-bottom: 30px;
+}
+.heading {
+  font-weight: 700;
+  line-height: 1.115em;
+  letter-spacing: -1px;
+  font-size: 2.5rem;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+  z-index: -1;
+  bottom: -24px;
+  left: 0px;
+}
+.new-signup {
+  font-size: 1.2rem;
+  margin: 30px 0px;
+}
+a {
+  text-decoration: none;
+  color: #088178;
+  font-weight: 600;
+}
+.forgot {
+  text-align: end;
+}
+.btn {
+  background-color: #088178;
+  color: #ffffff;
+}
+.btn:hover {
+  color: #088178;
+  background-color: #e7f4de;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #dee2e6;
+}
+.form {
+  padding-right: 5rem;
+}
+
+.incorrect {
+  margin: 0px;
+  padding: 5px;
+  color: red;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .form {
+    padding-right: 0px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .new-signup {
+    font-size: 1rem;
+    margin: 25px 0px;
+  }
+  .banner {
+    display: none;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
+  .form {
+    padding-right: 1rem;
+  }
+  .banner {
+    align-content: center;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .new-signup {
+    font-size: 1rem;
+    margin: 25px 0px;
+  }
+}
