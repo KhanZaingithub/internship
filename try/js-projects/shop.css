@@ -1,0 +1,90 @@
+@import url(style.css);
+.bg {
+  background: linear-gradient(0deg, rgb(10 10 10 / 30%), rgba(10, 10, 10, 0.3)),
+    url("images/banner/b1.jpg");
+  color: white;
+  height: auto;
+  text-align: center;
+  padding: 70px 0px;
+  align-content: center;
+  margin-bottom: 50px;
+}
+.bg .row {
+  margin: 0px;
+}
+.banner-text h1 {
+  font-weight: 600;
+}
+.banner-text p {
+  color: white;
+  padding: 0px;
+}
+#products {
+  margin-bottom: 0px;
+}
+.buttons {
+  margin-bottom: 50px;
+}
+
+.buttons button,
+.filter button,
+.filter button:hover,
+.filter button.active,
+.filter form button {
+  background-color: #088178;
+  color: #ffffff;
+  margin: 0px 2px;
+}
+.buttons button:hover,
+.filter button {
+  color: #088178;
+  background-color: #e7f4de;
+}
+.filter {
+  margin-bottom: 20px;
+}
+.filter form input {
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-right: 0px;
+  width: 20rem;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-left: auto;
+}
+.filter form input:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #dee2e6;
+}
+.filter form .js-submit {
+  margin-left: -4rem !important;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+#products .no-data {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .filter button {
+    margin: 5px 2px !important;
+  }
+  .filter form input {
+    margin-left: 0px;
+  }
+  .filter form {
+    margin-top: 0.5rem;
+  }
+  .filter form .js-submit {
+    margin: 0px 0px 0px -5rem !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .filter button {
+    margin: 10px 2px;
+  }
+  .filter form input {
+    margin-left: 0px;
+  }
+}
