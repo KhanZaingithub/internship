@@ -1,0 +1,120 @@
+
+[{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "Leriya Fashio",
+    "description" : "Leriya Fashion Shirt for Men Tropical Leaf Printed Rayon Shirts for Men ",
+    "rate" : "$30",
+    "image" : "images/products/f1.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+   "title" : "AdDennis Lingoidas",
+    "description" : "Dennis Lingo Men's Abstract Print Regular Fit Casual Shirt",
+    "rate" : "$25",
+    "image" : "images/products/f2.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "Leriya Fashio",
+    "description" : "Leriya Casual Shirt for Men Shirt for Men Men Stylish Shirt",
+    "rate" : "$20",
+    "image" : "images/products/f3.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+   "title" : "LookMark",
+    "description" : "LookMark Fashion Shirt for Men Tropical Leaf Printed Rayon Shirts for Men Preppy Short Sleeves Spread Collared Neck",
+    "rate" : "$25",
+    "image" : "images/products/f4.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "DHRUVI TRENDZ",
+    "description" : "DHRUVI TRENDZ Men's Regular Fit Shirt Graphic Printed Round Neck T Shirt",
+    "rate" : "$35",
+    "image" : "images/products/f5.jpg"
+},{
+    "category" : "men",
+    "type" : "jacket",
+    "title" : "Hmkm",
+    "description" : "Hmkm Shirt for Men Opaqu Cotton Shirts for Men Regular Fit Solid Shirts for Men",
+    "rate" : "$15",
+    "image" : "images/products/f6.jpg"
+},{
+    "category" : "women",
+    "type" : "skirts",
+    "title" : "Dada Shopy",
+    "description" : "Dada Shopy Rayon Cotton Slub Skirts for Women, Girls",
+    "rate" : "$35",
+    "image" : "images/products/f7.jpg"
+},{
+    "category" : "women",
+    "type" : "top",
+    "title" : "Leriya Fashion",
+    "description" : "Leriya women's casual regular fit round neck top",
+    "rate" : "$15",
+    "image" : "images/products/f8.jpg"
+},
+{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "Dennis Lingo",
+    "description" : "Dennis Lingo Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves",
+    "rate" : "$35",
+    "image" : "images/products/n1.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+   "title" : "Lymio Casual",
+    "description" : "Lymio Casual Shirt for Men Shirt for Men Men Stylish Shirt (D-Crush-16-23)",
+    "rate" : "$30",
+    "image" : "images/products/n2.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "Leriya Fashio",
+    "description" : "U.S. POLO ASSN. Cotton full Sleeve Solid Slim Fit Trending White Formal Shirt for Men Pack of 1",
+    "rate" : "$20",
+    "image" : "images/products/n3.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+   "title" : "Majestic",
+    "description" : "Majestic Man Cotton Checkered Slim Fit Casual Shirt For Men",
+    "rate" : "$18",
+    "image" : "images/products/n4.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "IndoPrimo",
+    "description" : "IndoPrimo Men's Western Fit Cotton Casual Bold Striped Shirt for Men Full Sleeves",
+    "rate" : "$24",
+    "image" : "images/products/n5.jpg"
+},{
+    "category" : "men",
+    "type" : "shorts",
+    "title" : "ENDEAVOUR",
+    "description" : "ENDEAVOUR WEAR Men's Outdoor Quick Dry Lightweight Sports Shorts Zipper Pockets",
+    "rate" : "$10",
+    "image" : "images/products/n6.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "Giordano",
+    "description" : "Giordano Men's Slim Fit Spread Collar Patch Pocket Long Sleeves Button Placket Curved Hem Solid Cotton Casual Shirt",
+    "rate" : "$35",
+    "image" : "images/products/n7.jpg"
+},{
+    "category" : "men",
+    "type" : "shirt",
+    "title" : "ROYAL COTTONS",
+    "description" : "ROYAL COTTONS Men's Regular Fit Double Pocket Popcorn Shirt",
+    "rate" : "$45",
+    "image" : "images/products/n8.jpg"
+}
+]
+
+
+   
+
